@@ -1,0 +1,487 @@
+:root{
+    --pricipal:#191414;
+    --verdeDestac:#1db954;
+}
+#central-board{
+    background-color: var(--pricipal);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    overflow: scroll;
+}
+#central-board .left-menu{
+    width: 270px;
+    height: 90vh;
+    position: fixed;
+    background-color: var(--verdeDestac);
+    /* display: none; */
+}
+#central-board .left-menu .logo-head{
+    height: 50px;
+    width: auto;
+    margin: 20px;
+}
+#central-board .left-menu .top-menu{
+    display: inline-flex;
+    margin: 6% -12.5%;
+    position: fixed;
+    flex-direction: column;
+}
+#central-board .left-menu .top-menu .encap-menu-op{
+    width: 100%;
+    height: 40px;
+    display: inline-flex;
+    margin: 2% 20px;
+}
+#central-board .left-menu .top-menu .encap-menu-op .p-menu{
+    margin: 2px 0 0 10px;
+    font-size: 1.2em;
+}
+.left-menu  .top-menu .encap-menu-op>i{
+    font-size: 1.5em;
+}
+/*-- MIDDLE AREA --*/
+.left-menu  .top-menu .middle-menu-title{
+    font-size: 1.2em;
+    color: #191414;
+    margin: 50% Auto 0 auto;
+}
+.left-menu  .top-menu .middle-menu{
+    margin: 5% 0 0 20px;
+    height: 50px;
+    width: 90%;
+    color: #191414;
+    opacity: 0.8;
+    display: inline-block;
+}
+.left-menu  .top-menu .middle-menu > p{
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+.left-menu  .top-menu .middle-menu >i{
+    float: right;
+    margin: -18% 5%;
+}
+/*-- DOWNLOAD APP AREA ---*/
+.down-op{
+    opacity: 0.8;
+    width: 260px;
+    margin: 190% 5px;
+    display: inline-block;
+    /* transform: scale(0.9); */
+}
+.down-op-instal{
+    border-bottom: 3px solid #1914148a;
+    width: 230px;
+    height: 7vh;
+    margin: 1%;
+    display: inline-flex;
+}
+.down-op-instal > i{
+    margin: 10px 2px 0px 2px;
+    font-size: 1.4rem;
+    padding-left: 10px;
+}
+.down-op-instal .op-instal{
+    font-size: 1.6rem;
+    margin: 5px 2px;  
+    font-weight: 400; 
+
+}
+.down-op-played{
+    
+    margin: 10px;
+    display: inline-flex;
+}
+.down-op-played .img-circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.down-op-played .op-played{
+    font-size: 1.5em;
+    margin: -05px 5px;
+    color: #191414;
+    font-weight: 300;
+}
+.down-op-played > i{
+    margin-top: 11%;
+    margin-left: -45%;
+    opacity: 0.6;
+}
+.down-op-played > p{
+    font-size: 0.9em;
+    color: #191414;
+    margin-top: 11%;
+    margin-left: 2%;
+
+}
+
+/*- PLAYED FOOTER -*/
+#played-bar{
+    background-color: #303030;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+   
+}
+#played-bar .playCenter{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    /* align-items: ; */
+}
+.playCenter .buttoms{
+    margin-top: 10px;
+    font-size: 1.3em;
+    /* flex-direction: row; */
+    /* display: flex; */
+    justify-content: center;
+    width: 300px;
+}
+.playCenter .buttoms > .fa-solid{
+    margin-left: 5%;
+}
+.playCenter .buttoms > .fa-solid:nth-child(3){
+    border: 2.2px solid #000000;
+    border-radius: 50%;
+    padding: 5px 7px;
+    text-align: center;
+}
+.playCenter .buttoms .barValue{
+    width: 300px;
+    height: 2px;
+    background-color: aliceblue;
+    display: flex;  
+    margin: 2.2% 5%;
+    transform: translateX(-50px);
+    border-radius: 10px;
+    
+}
+.playCenter .buttoms .barValue > div{
+    background-color: #1db954;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -3% 21%;
+}
+.playCenter .buttoms .barValue > i{
+    width: 22%;
+    background-color: #1db954ce;
+    margin: 0% -49%;
+    border-radius: 10px;
+
+}
+.playCenter .buttoms .barValue .temp{
+    font-size: 0.6em;
+    margin: -2.2% 14%;
+    font-weight: 100;
+    color: #1db954;
+}
+.playCenter .buttoms .barValue .temp:nth-last-child(1){
+    transform: translateX( 245px);
+    color: #199745;
+    margin: -2.1% 14%;
+
+
+}
+
+/* --- Itens-play --- */
+.playCenter .music-toq{
+    width: 400px;
+    height: 10vh;
+    display: inline-flex;
+}
+.music-toq >.music-toq-img{
+    height: 60px;
+    width: 60px;
+    margin: 2.5% 3% 2.5% 05%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+.music-toq .music-h1{
+    font-size: 1.9em;
+    color: #fff;
+    margin: 3% 0;
+}
+.music-toq .music-p{
+    font-size: 1em;
+    font-weight: 300;
+    color: #1db954;
+
+    margin: 11.2% -35% ;
+}
+.music-toq > #love{
+    margin-top: 5%;
+    margin-left: 55%;
+    /* margin-right: 10px; */
+    font-size: 1.3em;
+    color: #1db954;
+    transition: all 300ms ease;
+
+}
+/*- - listMusic - -*/
+.playCenter .listMusic{
+    width: 200px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: #fff; */
+}
+.listMusic .barVolum{
+    width: 70px;
+    height: 7px;
+    background-color: #1db954   ;
+    display: flex;  
+    margin: 2% 5%;
+    transform: translateX(-30px);
+    border-radius: 10px ;
+}
+.barVolum > div{
+    background-color: #191414;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: -8.5% 21%;
+}
+.barVolum > i{
+    width: 25px;
+    height: 7px;
+    margin: 0 -50px;
+    border-radius: 10px ;
+    background-color: #191414;
+}
+.listMusic > .fa-solid{
+    font-size: 1rem;
+    
+}
+/*- - MENU FROM BOARD - -*/
+.boardOps{
+    display: flex;
+    width: 100%;
+    height: auto;  
+    position: fixed;
+
+    /* overflow: scroll; */
+    /* margin: 0 auto; */
+}
+ .menuOps{
+    width: 1000px;
+    height: 10vh;
+    /* background-color: #1f1e1e; */
+    margin: 2% 35%;
+    /* position: absolute; */
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    /* border-radius: 5px; */
+}
+.menuOps .navbar-item{
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 100ms ease;
+}
+/*-- MODAL*/
+.release{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 25%;
+    /* overflow: scroll; */
+    
+}
+#modalNewR, #modalNewC {
+    width: 75%;
+    margin: 1% 5%;
+    display: block;
+    position: absolute;
+}
+#modalNewR .h1Modal{
+    font-size: 2.2em;
+    color: #fff;
+    margin: 2% 0;
+}
+#modalNewR .open-modal{
+    font-size: 1.2rem;
+    color: #fff;
+    float: right;
+    margin: -4% 0;
+}
+#modalNewR .modalCont{
+    /* display: none; */
+    width: 100%;
+    height: 65vh;
+    background-color: #30303021;
+    display: none;
+    
+    
+
+}
+
+.modalEncap{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 60vh;
+    padding: 3% 0;
+}
+.modalCont .encapModal{
+    width: 220px;
+    height: 220px;
+    list-style: none;
+    display: inline-block;
+    margin: 1% 0 0 0;
+    text-align: center;
+   
+
+    /* padding-top: 5% ; */
+}
+.modalCont .encapModal .imgModal{
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    margin: 0 auto;
+    /* padding: 2% */
+}
+.modalCont .encapModal >span{
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+/*-- modalNewC --*/
+#modalNewC {
+    width: 75%;
+    margin: 45% 5%;
+    display: block;
+    position: absolute;
+    padding-bottom: 20%;
+}
+#modalNewC .h1Modal{
+    font-size: 2.3rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#modalNewC .modalCont{
+    width: 100%;
+    height: 65vh;
+    background-color: #30303021;
+    border-radius: 0px 0px 30px 30px
+}
+#modalNewC .modalCont .footerModal{
+    width: 100%;
+    height: 10vh;
+    margin-top: 40%;
+    background-color: #199745;
+    border-radius: 0px 0px 30px 30px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerModal .footerLeft{
+    width: 20%;
+    height: 10vh;
+ 
+    display: inline-flex;
+    white-space: nowrap;
+
+
+}
+.footerModal .imgFooter{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin:1% 5% ;
+}
+.footerModal .h2Footer{
+    margin: 2% 10px;
+}
+.footerModal .pFooter{
+    margin: 12% -63%;
+    font-size: 1em;
+}
+.footerModal .footer-social{
+    font-size: 1rem;
+    color: #191414;
+    margin: 22% 0% 0 12%;
+    text-align: center;
+}
+/*-- FOOTER MIDDLE --*/
+.footerModal .footerMiddle{
+    width: 60%;
+    height: 10vh;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+}
+.footerMiddle #middle-text{
+    width: 80%;
+    height: 50%;
+    padding-left: 20px;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    /* border: 3px solid #191414; */
+    border: none;
+    background-color: #191414;
+    color: #1db954;
+    margin: 7px;
+}
+.footerMiddle #middle-btn{
+    width: 120px;
+    height: 50%;
+    background-color: #191414;
+    color: #1db954;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.3rem;
+
+}
+#conv-modal{
+    color: #fff;
+    padding: 1%;
+}
+.textCont{
+    color: #1db954;
+    font-size: 1.3rem;
+    height: 55vh;
+    overflow-y: scroll;
+    scrollbar-color: var(--verdeDestac);
+    position: absolute;
+    width: 100%;
+    margin: 1% ;
+    /* background-color: #fff; */
+}
+.textCont #color-text{
+    border: 1px;
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+.message{
+    padding: 2px;
+}
+
+/* ----------------------------------------------------- EFECTS AND TRANSITIONS ----------------------------------------------------- */
+.textCont::-webkit-scrollbar {
+    display: none;
+}
+.navbar-item:active {
+    border: 2px solid #199745;
+    padding: 5px;
+}
+.navbar-item:hover{
+    border-bottom: 2px solid #199745;
+    padding-bottom: 5px;
+}

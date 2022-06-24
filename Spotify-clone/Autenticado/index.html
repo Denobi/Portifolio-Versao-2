@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone - Musica para todos</title>
+    <link rel="stylesheet" type="text/css" href="/public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+    <!------- NavBar ------>
+    <navbar id="navbar">
+        <div class="navbar-container">
+            <img src="/public/img/logo.png" alt="" srcset="" class="logo">
+            <ul class="navbar-items">
+                <li class="navbar-item">Premium</li>
+                <li class="navbar-item">Ajuda</li>
+                <li class="navbar-item">Baixar</li>
+                <li class="navbar-item">Inscrever-se</li>
+                <li class="navbar-item" onclick="modalSign()">Entrar</li>
+            </ul>
+        </div>
+    </navbar>
+    <!-- ShowCase -->
+    <div id="showcase">
+        <div class="showcase-container">
+            <h2>Música para todos.</h2>
+            <p>Milhões de músicas e podcasts para explorar. E nem precisa de cartão de crédito.</p>
+            <button class="btn-primary">Obtenha o Spotify Free</button>
+        </div>
+    </div>
+    <!--°--°--Footer--º--°-->
+    <footer id="footer">
+        <div class="footer-content">
+            <img src="img/logo.png" alt="" srcset="" class="logo">
+            <ul class="footer-menu">
+                <p>Empresa</p>
+                <li class="footer-menu-item">Sobre</li>
+                <li class="footer-menu-item">Empregos</li>
+                <li class="footer-menu-item">For the Record</li>
+            </ul>
+            <ul class="footer-menu">
+                <p>Comunidades</p>
+                <li class="footer-menu-item">Para Artistas</li>
+                <li class="footer-menu-item">Desenvolvedores</li>
+                <li class="footer-menu-item">Marcas</li>
+                <li class="footer-menu-item">Investidores</li>
+                <li class="footer-menu-item">Fornecedores</li>
+            </ul>
+            <ul class="footer-menu">
+                <p>Links úteis</p>
+                <li class="footer-menu-item">Ajuda</li>
+                <li class="footer-menu-item">Player da Web</li>
+                <li class="footer-menu-item">Aplicativo móvel grátis</li>
+            </ul>
+            <div class="social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+            </div>
+        </div>
+        <div class="footer-info">
+            <ul class="footer-info-items">
+                <li class="footer-info-item">Legal</li>
+                <li class="footer-info-item">Centro de Privacidade</li>
+                <li class="footer-info-item">Politica de privacidade</li>
+                <li class="footer-info-item">Cookies</li>
+                <li class="footer-info-item">Sobre anúncios</li>
+            </ul>
+            <div class="rights">
+                <div class="country">
+                    <p>Brasil</p>
+                    <img src="/public/img/brazil.png" alt="" srcset="" class="brazil-flag">
+                </div>
+                <p>&copy; 2022 Spotify AB</p>
+            </div>
+        </div>
+    </footer>
+    <div id="modal">
+        <div class="modal-container">
+            <i class="fa-solid fa-xmark" onclick="modalClose()"></i>
+            <div class="modal-login">
+                <div class="up-modal-title">
+                    <h2 class="modal-title">Login</h2>
+                    <p>Acesse nossa plataforma e escute suas musicas</p>
+                    <img src="/public/img/logo.png" alt="" srcset="" class="logo">
+
+                </div>
+                <form method="post" class="form-modal">
+                    <!-- <label for="username">Nome de Usuario: </label> -->
+                    <p class="up-form-title">Já Cadastrado!</p>
+                    <input type="text" name="login" id="nome" class="input-modal" placeholder="Nome de Usuario:">
+                    <!-- <label for="username">Senha: </label> -->
+                    <input type="password" name="password" id="pass" class="input-modal" placeholder="Senha: "> 
+                    <input class="btn-send" type="submit" value="Acessar">
+                    <!-- <button type="reset"></button> -->
+                </form>
+                <div class="social-log">
+                    <p class="up-social-title">Logar com outros apps</p>
+                    <div>
+                        <a class="ball-social" onclick="logSite()"><i class="fa-brands fa-instagram"></i></a>
+                        <a class="ball-social" onclick="logSite()"><i class="fa-brands fa-google"></i></a>
+                        <a class="ball-social" onclick="logSite()"><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/public/js/script.js"></script>
+</body>
+</html>

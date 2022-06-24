@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard Spotify</title>
+    <link rel="stylesheet" href="/public/css/styleDash.css">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js" integrity="sha512-MgkNs0gNdrnOM7k+0L+wgiRc5aLgl74sJQKbIWegVIMvVGPc1+gc1L2oK9Wf/D9pq58eqIJAxOonYPVE5UwUFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="/public/js/scriptDash.js"></script>
+</head>
+<body>
+    
+    <div id="central-board">
+        <div class="left-menu">
+            <img src="/public/img/logo.png" alt="" srcset="" class="logo-head">
+            <div class="top-menu">
+                <a class="encap-menu-op">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <p class="p-menu">Pesquisar</p>
+                </a>
+                <a class="encap-menu-op">
+                    <i class="fa-solid fa-house"></i>
+                    <p class="p-menu">Inicio</p>
+                </a>
+                <a class="encap-menu-op">
+                    <i class="fa-solid fa-list"></i>
+                    <p class="p-menu">Minha Biblioteca</p>
+                </a>
+
+                <h1 class="middle-menu-title">Tocados Recentemente</h1>
+                <div class="middle-menu">
+                    <h3 class="title-music">500° Graus</h3>
+                    <p>Musica</p>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <div class="middle-menu">
+                    <h3 class="title-music">Noite de Crime</h3>
+                    <p>Playlist</p>
+                    <i class="fa-solid fa-volume-xmark"></i>
+                </div>
+
+            </div>
+            <div class="down-op">
+                <div class="down-op-instal">
+                    <i class="fa-regular fa-circle-down"></i>
+                    <h1 class="op-instal">Install App</h1>
+                </div>
+                <div class="down-op-played">
+                    <img src="https://images.pexels.com/photos/9043622/pexels-photo-9043622.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="" class="img-circle">
+                    <h1 class="op-played">Old Play</h1>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <p>Im Play</p>  
+                </div>
+                
+
+            </div>
+        </div>
+        <div id="boardOps">
+            <div class="menuOps">
+                <li class="navbar-item">Podcast</li>
+                <li class="navbar-item">Musicas</li>
+                <li class="navbar-item">Playlist</li>
+                <li class="navbar-item">Novidades</li>
+                <li class="navbar-item">Generos</li>
+            </div>
+            <div class="release">
+                <div id="modalNewR">
+                    <h1 class="h1Modal">New Release</h1>
+                    <a class="open-modal" onclick="modalNewR()">View More</a>
+                    <div class="modalCont">
+                       <div class="modalEncap">
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                            <li class="encapModal">
+                                <img class="imgModal" src="https://images.pexels.com/photos/207732/pexels-photo-207732.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <!-- <h1 class="h1Modal">Nome da musica</h1> -->
+                                <span>Nome do artista</span>
+                            </li>
+                       </div>
+                    </div>
+                    
+                </div>
+                <div id="modalNewC">
+                    <h1 class="h1Modal">Chat</h1>               
+                    <div class="modalCont">
+                        <div class="textCont">
+                            <input type="color" name="color-text" id="color-text" value="#ffffff">
+
+                        </div>
+                      
+                        <div class="footerModal">
+                            <div class="footerLeft">
+                                <img class="imgFooter" src="https://images.pexels.com/photos/3525908/pexels-photo-3525908.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="" srcset="">
+                                <h2 class="h2Footer" name="h2Footer"> Seu usuario</h2>
+                                <p class="pFooter">produtor Musical</p>
+                                <a class="footer-social" onclick="logSite()"><i class="fa-brands fa-instagram"></i></a>
+                                <a class="footer-social" onclick="logSite()"><i class="fa-brands fa-twitter"></i></a>
+                                <a class="footer-social" onclick="logSite()"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <form method="post" class="footerMiddle">
+                                <input type="text" id="middle-text" name="middle-text">
+                                <input type="submit" id="middle-btn" value="ENVIAR" >
+                                
+                            </form>
+                            <div class="footerRight">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+               
+                
+            </div>
+        </div>
+    </div>
+    
+    <footer id="played-bar">
+        <div class="playCenter">
+            <div class="music-toq">
+                
+                <img src="https://images.pexels.com/photos/2733337/pexels-photo-2733337.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="music-toq-img" alt="">
+                <h1 class="music-h1">Brain FTW</h1>
+                <p class="music-p">nord sticks</p>
+                <i class="fa-regular fa-heart" onclick="loveMusic()" id="love"></i>
+            </div>
+            <div class="buttoms">
+
+                <i class="fa-solid fa-shuffle"></i>
+                <i class="fa-solid fa-backward-fast"></i> 
+                <i class="fa-solid fa-pause" onclick="playStop()" id="stop"></i> 
+                <i class="fa-solid fa-forward-fast"></i> 
+                <i class="fa-solid fa-repeat"></i>
+
+                <div class="barValue">
+                    <div></div>
+                    <i></i>
+                    <p class="temp">0:46</p>
+                    <p class="temp">2:46</p>
+                </div>
+                
+            </div>
+            <div class="listMusic">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="barVolum">
+                    <div></div>
+                    <i></i>
+                </div>
+            </div>
+            
+        </div>
+
+    </footer>
+    <script type="text/javascript">
+       
+        
+
+
+        function muderColor(){
+            let chamColor = document.getElementById('color-text');
+            let colors = chamColor.value;
+            document.querySelector('.textCont').style.color = `${colors}`;
+            console.log(colors);
+        }
+        var socket = io('http://192.168.1.115:8080');
+
+            function renderMessage(message) {
+                $('.textCont').append('<div class="message"><strong>'+ message.author +'</strong>: '+ message.message +'</div>');
+                muderColor();
+            }
+
+            socket.on('receivedMessage', function(message){
+                renderMessage(message);
+            })
+
+            $('.footerMiddle').submit(function (event) {
+                event.preventDefault();
+                var author = $('h2[name=h2Footer]').text();
+                var message = $('input[name=middle-text]').val();
+                var color =$('input[name=color-text]').val();
+                if (author.length && message.length) {
+                    var messageObject={
+                        author:author,
+                        message:message,
+                        color:color
+                    };
+                    renderMessage(messageObject);
+                    socket.emit('sendMessage',messageObject);
+
+                    // console.log(messageObject);
+                   
+                   
+                    
+                } 
+                // document.querySelector('#middle-text').value="",
+            });
+    </script>
+</body>
+</html>
