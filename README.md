@@ -11,6 +11,6 @@
  <a href='https://github.com/Denobi/Portifolio-Versao-2/tree/main/PORTIFOLIO%20PRINCIPAL' target='_blank'> <li>PORTIFOLIO PRINCIPAL</li></a>
  <a href='https://github.com/Denobi/Portifolio-Versao-2/tree/main/PORTIFOLIO' target='_blank'> <li>PORTIFOLIO</li></a>
  <a href='https://github.com/Denobi/Portifolio-Versao-2/tree/main/PROJETO%20CRUD' target='_blank'> <li>PROJETO CRUD</li></a>
- <a href='https://github.com/Denobi/Portifolio-Versao-2/tree/main/Spotify-clone' target='_blank'> <li>Spotify-clone</li></a>
+ <a href='https://github.com/Denobi/Portifolio-Versao-2/tree/main/Spotify-clone' target='_blank'> <li>Spotify-clone</li> <span>(Necessário NodeMon)</span></a>
  <a href='https://github.com/Denobi/Portifolio-Versao-2/tree/main/TO_DO_LIST' target='_blank'> <li>TO_DO_LIST</li></a>
 </ul>
