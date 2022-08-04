@@ -3,7 +3,7 @@
 
 -----------------
 <h1>Lista de projetos:</h1>
-<h1><a href='http://www.denobi.tech/' target='_blank'>MEU SITE </a></h1>
+<h1><a href='http://www.denobi.site/' target='_blank'>MEU SITE </a></h1>
 <ul>
  
  <a href='https://github.com/Denobi/Portifolio-Versao-2/tree/main/BLOG-Pessoal' target='_blank'> <li>BLOG-Pessoal</li></a>
